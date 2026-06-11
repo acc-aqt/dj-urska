@@ -4,6 +4,10 @@ const videos = [
     src: "assets/video1.mp4"
   },
   {
+    title: "Leaked recording of from 'Berghain' in Berlin, Germany -  09/2027",
+    src: "assets/video3.mp4"
+  },
+  {
     title: "Dj Urška performing live at 'Rote Sonne' in Munich, Germany -  08/2027",
     src: "assets/video2.mp4"
   },
