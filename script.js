@@ -4,7 +4,11 @@ const videos = [
     src: "assets/video1.mp4"
   },
   {
-    title: "Leaked recording of from 'Berghain' in Berlin, Germany -  09/2027",
+    title: "Dj Urška leaving stage at 'Butik festical' in Tolmin, Slovenia -  07/2027",
+    src: "assets/video4.mp4"
+  },
+  {
+    title: "Leaked recording from 'Berghain' in Berlin, Germany -  09/2027",
     src: "assets/video3.mp4"
   },
   {
