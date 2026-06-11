@@ -58,3 +58,27 @@ body {
     font-weight: 500;
     text-align: center;
 }
+
+.about {
+
+    max-width: 700px;
+  
+    margin: 60px auto;
+  
+    text-align: center;
+  
+    line-height: 1.6;
+  
+  }
+  
+  .about-image {
+  
+    display: block;
+  
+    margin: 20px auto;
+  
+    max-width: 200px;   /* adjust as needed */
+  
+    height: auto;
+  
+  }
