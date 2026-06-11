@@ -4,7 +4,7 @@ const videos = [
     src: "assets/video1.mp4"
   },
   {
-    title: "Dj Urška performing live at Rote Sonne at 'Rote Sonne' in Munich, Germany -  08/2027",
+    title: "Dj Urška performing live at 'Rote Sonne' in Munich, Germany -  08/2027",
     src: "assets/video2.mp4"
   },
 ];
