@@ -15,6 +15,7 @@ body {
 
   
   video {
+    margin-top: 24px;   /* space below the video */
 
     display: block;
   
@@ -25,6 +26,7 @@ body {
     object-fit: cover;
   
     background: transparent;
+    margin-bottom: 24px;   /* space below the video */
   
   }
   .controls {
@@ -73,6 +75,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.12em;
+    margin-bottom: 8px;    /* space between title and subtitle */
 }
 
 #videoSubtitle {
@@ -88,7 +91,7 @@ body {
 
     max-width: 700px;
   
-    margin: 60px auto;
+    margin: 10px auto;
   
     text-align: center;
   
@@ -96,6 +99,23 @@ body {
   
   }
   
+  .about a {
+
+    color: rgba(240, 143, 143, 0.75);
+
+    text-decoration: none;
+
+    transition: color 0.2s ease, opacity 0.2s ease;
+
+}
+
+.about a:hover {
+
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
   .about-image {
   
     display: block;
