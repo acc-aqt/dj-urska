@@ -32,7 +32,7 @@ const videos = [
   },
   {
     title: "Dj Urška performing live at 'Brookyln Mirage'",
-    subtitle: "Brooklyn, USA -  11/2027",
+    subtitle: "New York, USA -  11/2027",
     src: "assets/video7.mp4"
   },
 ];
