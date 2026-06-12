@@ -51,28 +51,21 @@ let playlist = [];
 
 let playlistIndex = 0;
 
-function shuffleVideos() {
-
-  playlist = [...videos];
-
+function shufflePlaylist() {
   for (let i = playlist.length - 1; i > 0; i--) {
-
     const randomIndex = Math.floor(Math.random() * (i + 1));
-
     [playlist[i], playlist[randomIndex]] = [playlist[randomIndex], playlist[i]];
-
   }
 
   playlistIndex = 0;
-
 }
 
 function playNextVideo() {
 
   if (playlist.length === 0 || playlistIndex >= playlist.length) {
 
-    shuffleVideos();
-
+    playlist = [...videos];
+    shufflePlaylist();
   }
 
   const selectedVideo = playlist[playlistIndex];
@@ -103,8 +96,18 @@ muteBtn.addEventListener("click", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  shuffleVideos();
+  const firstVideo = videos[0];
 
-  playNextVideo();
+  video.src = firstVideo.src;
+
+  videoTitle.textContent = firstVideo.title;
+
+  videoSubtitle.textContent = firstVideo.subtitle;
+
+  video.play();
+
+  playlist = videos.slice(1);
+
+  shufflePlaylist();
 
 });
