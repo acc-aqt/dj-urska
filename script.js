@@ -15,6 +15,19 @@ const videos = [
     title: "Dj Urška performing live at 'Rote Sonne' in Munich, Germany -  08/2027",
     src: "assets/video2.mp4"
   },
+  {
+    title: "Dj Urška performing live at 'Womb' in Tokyo, Japan -  09/2027",
+    src: "assets/video5.mp4"
+  },
+  ,
+  {
+    title: "Dj Urška performing live at 'Fabric' in London, England -  10/2027",
+    src: "assets/video6.mp4"
+  },
+  {
+    title: "Dj Urška performing live at 'Brookyln Mirage' in New York, USA -  11/2027",
+    src: "assets/video7.mp4"
+  },
 ];
 
 const video = document.getElementById("video");
