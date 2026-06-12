@@ -5,9 +5,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f5f5f5;
+    background: #111;
+
+    color: #f2f2f2;
     font-family: Arial, sans-serif;
+
+    letter-spacing: 0.02em;
   }
+
   
   video {
 
@@ -30,18 +35,25 @@ body {
   
   button {
     padding: 10px 16px;
-    border: none;
     border-radius: 6px;
-    background: #222;
-    color: white;
     cursor: pointer;
     font-size: 14px;
+        background: transparent;
+        color: #f2f2f2;
+        border: 1px solid #444;
+
   }
   
   button:hover {
     opacity: 0.9;
+    border-color: #888;
+
   }
 
+
+
+
+  
   .player {
 
     display: inline-flex;
@@ -52,13 +64,26 @@ body {
   
   }
 
-#videoTitle {
-    margin-top: 16px;
-    font-size: 14px;
-    font-weight: 500;
+.video-info {
+    margin-top: 18px;
     text-align: center;
 }
 
+#videoTitle {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+#videoSubtitle {
+    margin-top: 4px;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    color: rgba(255,255,255,0.55);;
+    letter-spacing: 0.08em;
+}
 .about {
 
     max-width: 700px;
@@ -82,3 +107,4 @@ body {
     height: auto;
   
   }
+
