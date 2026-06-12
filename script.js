@@ -5,7 +5,7 @@ const videos = [
     src: "assets/video1.mp4"
   },
   {
-    title: "Dj Urška leaving stage at 'Butik festical'",
+    title: "Dj Urška leaving stage at Butik festival",
     subtitle: "Tolmin, Slovenia -  07/2027",
     src: "assets/video4.mp4"
   },
