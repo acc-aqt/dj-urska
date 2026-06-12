@@ -38,35 +38,73 @@ const videos = [
 ];
 
 const video = document.getElementById("video");
+
 const videoTitle = document.getElementById("videoTitle");
+
 const videoSubtitle = document.getElementById("videoSubtitle");
+
 const nextBtn = document.getElementById("nextBtn");
+
 const muteBtn = document.getElementById("muteBtn");
 
-let currentIndex = -1;
+let playlist = [];
 
-function playRandomVideo() {
-  let newIndex;
+let playlistIndex = 0;
 
-  do {
-    newIndex = Math.floor(Math.random() * videos.length);
-  } while (videos.length > 1 && newIndex === currentIndex);
+function shuffleVideos() {
 
-  currentIndex = newIndex;
+  playlist = [...videos];
 
-  video.src = videos[currentIndex].src;
-  videoTitle.textContent = videos[currentIndex].title;
+  for (let i = playlist.length - 1; i > 0; i--) {
 
-videoSubtitle.textContent = videos[currentIndex].subtitle;
+    const randomIndex = Math.floor(Math.random() * (i + 1));
 
-  video.play();
+    [playlist[i], playlist[randomIndex]] = [playlist[randomIndex], playlist[i]];
+
+  }
+
+  playlistIndex = 0;
+
 }
 
-nextBtn.addEventListener("click", playRandomVideo);
+function playNextVideo() {
+
+  if (playlist.length === 0 || playlistIndex >= playlist.length) {
+
+    shuffleVideos();
+
+  }
+
+  const selectedVideo = playlist[playlistIndex];
+
+  playlistIndex++;
+
+  video.src = selectedVideo.src;
+
+  videoTitle.textContent = selectedVideo.title;
+
+  videoSubtitle.textContent = selectedVideo.subtitle;
+
+  video.play();
+
+}
+
+nextBtn.addEventListener("click", playNextVideo);
+
+video.addEventListener("ended", playNextVideo);
 
 muteBtn.addEventListener("click", () => {
+
   video.muted = !video.muted;
-  muteBtn.textContent = video.muted ? "Club Mode" : "Respect the neighbors";
+
+  muteBtn.textContent = video.muted ? "Club Mode" : "Respect the Neighbors";
+
 });
 
-window.addEventListener("DOMContentLoaded", playRandomVideo);
+window.addEventListener("DOMContentLoaded", () => {
+
+  shuffleVideos();
+
+  playNextVideo();
+
+});
