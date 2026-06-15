@@ -1,11 +1,11 @@
 const videos = [{
         text: {
             en: {
-                title: "DJ Urška performing live at 'Klub K4'",
+                title: "DJ Urška performing live <wbr>at 'Klub K4'",
                 subtitle: 'Ljubljana, Slovenia - 06/2027'
             },
             slo: {
-                title: 'DJ Urška v živo v »Klubu K4«',
+                title: 'DJ Urška v živo v <wbr>»Klubu K4«',
                 subtitle: 'Ljubljana, Slovenija - 06/2027'
             }
         },
@@ -14,11 +14,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: 'DJ Urška leaving stage at Butik Festival',
+                title: 'DJ Urška leaving stage <wbr>at Butik Festival',
                 subtitle: 'Tolmin, Slovenia - 07/2027'
             },
             slo: {
-                title: 'DJ Urška po nastopu zapušča oder festivala Butik',
+                title: 'DJ Urška po nastopu zapušča <wbr>oder festivala Butik',
                 subtitle: 'Tolmin, Slovenija - 07/2027'
             }
         },
@@ -27,11 +27,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "Leaked recording from 'Berghain'",
+                title: "Leaked recording from <wbr>'Berghain'",
                 subtitle: 'Berlin, Germany - 09/2027'
             },
             slo: {
-                title: 'V javnost je pricurljal posnetek iz »Berghaina«',
+                title: 'V javnost je pricurljal posnetek iz <wbr>»Berghaina«',
                 subtitle: 'Berlin, Nemčija - 09/2027'
             }
         },
@@ -40,11 +40,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "DJ Urška improvising live at 'Rote Sonne'",
+                title: "DJ Urška improvising live <wbr>at 'Rote Sonne'",
                 subtitle: 'Munich, Germany - 08/2027'
             },
             slo: {
-                title: 'DJ Urška improvizira v živo v klubu »Rote Sonne«',
+                title: 'DJ Urška improvizira v živo <wbr>v klubu »Rote Sonne«',
                 subtitle: 'München, Nemčija - 08/2027'
             }
         },
@@ -53,11 +53,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "DJ Urška testing new sounds at 'WOMB'",
+                title: "DJ Urška testing new sounds <wbr>at 'WOMB'",
                 subtitle: 'Tokyo, Japan - 09/2027'
             },
             slo: {
-                title: 'DJ Urška preizkuša nove zvoke v klubu »Womb«',
+                title: 'DJ Urška preizkuša nove zvoke <wbr>v klubu »Womb«',
                 subtitle: 'Tokio, Japonska - 09/2027'
             }
         },
@@ -66,11 +66,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "Recovered footage from a gig at 'Fabric'",
+                title: "Recovered footage from a gig <wbr>at 'Fabric'",
                 subtitle: 'London, England - 10/2027'
             },
             slo: {
-                title: 'Na novo odkriti posnetki z nastopa v klubu »Fabric«',
+                title: 'Na novo odkriti posnetki z nastopa <wbr>v klubu »Fabric«',
                 subtitle: 'London, Anglija - 10/2027'
             }
         },
@@ -79,11 +79,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "DJ Urška presenting a new set at 'Brooklyn Mirage'",
+                title: "DJ Urška presenting a new set <wbr>at 'Brooklyn Mirage'",
                 subtitle: 'New York, USA - 11/2027'
             },
             slo: {
-                title: 'DJ Urška predstavlja nov set v »Brooklyn Mirage«',
+                title: 'DJ Urška predstavlja nov set <wbr>v »Brooklyn Mirage«',
                 subtitle: 'New York, ZDA - 11/2027'
             }
         },
@@ -92,11 +92,11 @@ const videos = [{
     {
         text: {
             en: {
-                title: "A moment from DJ Urška's appearance at 'Primavera Sound'",
+                title: "A moment from DJ Urška's appearance <wbr>at 'Primavera Sound'",
                 subtitle: 'Porto, Portugal - 05/2027'
             },
             slo: {
-                title: 'Utrinek z nastopa DJ Urške na festivalu »Primavera Sound«',
+                title: 'Utrinek z nastopa DJ Urške <wbr>na festivalu »Primavera Sound«',
                 subtitle: 'Porto, Portugalska - 05/2027'
             }
         },
@@ -137,7 +137,7 @@ function playNextVideo() {
 
     video.src = currentVideo.src
 
-    videoTitle.textContent = currentVideo.text[currentLang].title
+    videoTitle.innerHTML = currentVideo.text[currentLang].title
 
     videoSubtitle.textContent = currentVideo.text[currentLang].subtitle
 
@@ -192,7 +192,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     video.src = firstVideo.src
 
-    videoTitle.textContent = firstVideo.text[currentLang].title
+    videoTitle.innerHTML = firstVideo.text[currentLang].title
 
     videoSubtitle.textContent = firstVideo.text[currentLang].subtitle
 
@@ -225,7 +225,7 @@ function setLanguage(lang) {
     document.getElementById('langSlo').classList.toggle('active', lang === 'slo')
 
     if (currentVideo) {
-        videoTitle.textContent = currentVideo.text[currentLang].title
+        videoTitle.innerHTML = currentVideo.text[currentLang].title
 
         videoSubtitle.textContent = currentVideo.text[currentLang].subtitle
     }
