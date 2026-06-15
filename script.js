@@ -92,12 +92,10 @@ nextBtn.addEventListener("click", playNextVideo);
 video.addEventListener("ended", playNextVideo);
 
 muteBtn.addEventListener("click", () => {
-
   video.muted = !video.muted;
-
-  muteBtn.textContent = video.muted ? "Club Mode" : "Respect the Neighbors";
-
+  updateMuteButton();
 });
+
 
 window.addEventListener("DOMContentLoaded", () => {
 
@@ -115,4 +113,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
   shufflePlaylist();
 
+  updateMuteButton();
+
+
 });
+
+function updateMuteButton() {
+  if (video.muted) {
+    muteBtn.textContent = "Club Mode";
+    muteBtn.classList.add("glow");
+  } else {
+    muteBtn.textContent = "Respect the Neighbors";
+    muteBtn.classList.remove("glow");
+  }
+}
+
