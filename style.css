@@ -6,65 +6,48 @@ body {
     justify-content: center;
     align-items: center;
     background: #111;
-
     color: #f2f2f2;
     font-family: Arial, sans-serif;
-
     letter-spacing: 0.02em;
-  }
+}
 
-  
-  video {
+video {
     margin-top: 12px;
-
     display: block;
-  
     width: min(80vh, 90vw);
-  
     height: min(80vh, 90vw);
-  
     object-fit: cover;
-  
     background: transparent;
-    margin-bottom: 24px;   /* space below the video */
-  
-  }
-  .controls {
+    margin-bottom: 24px;
+    /* space below the video */
+}
+
+.controls {
     margin-top: 20px;
     display: flex;
     gap: 10px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-        background: transparent;
-        color: #f2f2f2;
-        border: 1px solid #444;
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #444;
+}
 
-  }
-  
-  button:hover {
+button:hover {
     opacity: 0.9;
     border-color: #888;
+}
 
-  }
-
-
-
-
-  
-  .player {
-
+.player {
     display: inline-flex;
-  
     flex-direction: column;
-  
     align-items: center;
-  
-  }
+}
 
 .video-info {
     margin-top: 18px;
@@ -75,147 +58,103 @@ body {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.12em;
-    margin-bottom: 8px;    /* space between title and subtitle */
+    margin-bottom: 8px;
+    /* space between title and subtitle */
 }
 
 #videoSubtitle {
     margin-top: 4px;
-
     font-size: 13px;
     font-weight: 300;
-
-    color: rgba(255,255,255,0.55);;
+    color: rgba(255, 255, 255, 0.55);
+    ;
     letter-spacing: 0.08em;
 }
+
 .about {
-
     max-width: 700px;
-  
     margin: 10px auto;
-  
     text-align: center;
-  
     line-height: 1.6;
-  
-  }
-  
-  .about a {
+}
 
+.about a {
     color: rgba(240, 143, 143, 0.75);
-
     text-decoration: none;
-
     transition: color 0.2s ease, opacity 0.2s ease;
-
 }
 
 .about a:hover {
-
     color: rgba(255, 255, 255, 1);
-
 }
 
-
-  .about-image {
-  
+.about-image {
     display: block;
-  
     margin: 20px auto;
-  
-    max-width: 200px;   /* adjust as needed */
-  
+    max-width: 200px;
+    /* adjust as needed */
     height: auto;
-  
-  }
+}
 
-  #muteBtn.glow {
-
+#muteBtn.glow {
     border-color: rgba(240, 143, 143, 0.9);
-  
     color: rgba(255, 210, 210, 0.95);
-  
     animation: indicatorGlow 1.2s infinite;
-  
-  }
-  
-  @keyframes indicatorGlow {
-  
-    0%, 100% {
-  
-      box-shadow: 0 0 4px rgba(240, 143, 143, 0.35);
-  
-      background: rgba(240, 143, 143, 0.04);
-  
+}
+
+@keyframes indicatorGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 4px rgba(240, 143, 143, 0.35);
+        background: rgba(240, 143, 143, 0.04);
     }
-  
     50% {
-  
-      box-shadow: 0 0 16px rgba(240, 143, 143, 0.95);
-  
-      background: rgba(240, 143, 143, 0.14);
-  
+        box-shadow: 0 0 16px rgba(240, 143, 143, 0.95);
+        background: rgba(240, 143, 143, 0.14);
     }
+}
 
-  }
-
-
-
-  .language-switch {
-
+.language-switch {
     position: fixed;
-  
     top: 18px;
-  
     right: 18px;
-  
     z-index: 1000;
-  
     display: flex;
-  
     gap: 8px;
-  
     padding: 8px;
-  
     border-radius: 8px;
-  
     background: rgba(10, 10, 10, 0.55);
-  
     backdrop-filter: blur(12px);
-  
     -webkit-backdrop-filter: blur(12px);
-  
-  }
+}
 
-  
-  .language-switch button {
+.language-switch button {
     background: transparent;
     color: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 6px 10px;
     font-size: 12px;
     letter-spacing: 0.08em;
-  }
-  
-  .language-switch button:hover {
+}
+
+.language-switch button:hover {
     color: white;
     border-color: rgba(255, 255, 255, 0.6);
-  }
+}
 
-  .language-switch button.active {
-
+.language-switch button.active {
     color: white;
-  
     border-color: white;
-  
-  }
+}
 
-  @media (max-width: 768px) {
-
+@media (max-width: 768px) {
     .language-switch {
-  
-      flex-direction: column;  
-      top: 2px;
-  
-      right: 2px;
-      padding: 8px;}
-      .language-switch button{padding: 6px 6px;}  }
+        flex-direction: column;
+        top: 2px;
+        right: 2px;
+        padding: 8px;
+    }
+    .language-switch button {
+        padding: 6px 6px;
+    }
+}
