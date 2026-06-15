@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 4px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
 
   
   video {
-    margin-top: 24px;   /* space below the video */
+    margin-top: 12px;
 
     display: block;
   
@@ -159,19 +159,37 @@ body {
   }
 
 
+
   .language-switch {
+
     position: fixed;
+  
     top: 18px;
+  
     right: 18px;
+  
     z-index: 1000;
   
     display: flex;
+  
     gap: 8px;
+  
+    padding: 8px;
+  
+    border-radius: 8px;
+  
+    background: rgba(10, 10, 10, 0.55);
+  
+    backdrop-filter: blur(12px);
+  
+    -webkit-backdrop-filter: blur(12px);
+  
   }
+
   
   .language-switch button {
     background: transparent;
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 6px 10px;
     font-size: 12px;
@@ -190,3 +208,14 @@ body {
     border-color: white;
   
   }
+
+  @media (max-width: 768px) {
+
+    .language-switch {
+  
+      flex-direction: column;  
+      top: 2px;
+  
+      right: 2px;
+      padding: 8px;}
+      .language-switch button{padding: 6px 6px;}  }
