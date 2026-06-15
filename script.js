@@ -35,6 +35,11 @@ const videos = [
     subtitle: "New York, USA -  11/2027",
     src: "assets/video7.mp4"
   },
+  {
+    title: "Primavera Sound",
+    subtitle: "Porto, Portugal -  05/2027",
+    src: "assets/video8.mp4"
+  },
 ];
 
 const video = document.getElementById("video");
