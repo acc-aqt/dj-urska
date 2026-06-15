@@ -15,30 +15,30 @@ const videos = [
     src: "assets/video3.mp4"
   },
   {
-    title: "Dj Urška performing live at 'Rote Sonne'",
+    title: "Dj Urška improvising live at 'Rote Sonne'",
     subtitle: "Munich, Germany -  08/2027",
     src: "assets/video2.mp4"
   },
   {
-    title: "Dj Urška performing live at 'Womb'",
+    title: "Dj Urška testing new sounds at 'Womb'",
     subtitle: "Tokyo, Japan -  09/2027",
     src: "assets/video5.mp4"
   },
   ,
   {
-    title: "Dj Urška performing live at 'Fabric'",
+    title: "Recovered footage from a gig at 'Fabric'",
     subtitle: "London, England -  10/2027",
     src: "assets/video6.mp4"
   },
   {
-    title: "Dj Urška performing live at 'Brookyln Mirage'",
+    title: "Dj Urška presenting a new set at 'Brookyln Mirage'",
     subtitle: "New York, USA -  11/2027",
-    src: "assets/video7.mp4"
+    src: "assets/video8.mp4"
   },
   {
-    title: "Primavera Sound",
+    title: "A moment from Dj Urška's appearance at 'Primavera Sound'",
     subtitle: "Porto, Portugal -  05/2027",
-    src: "assets/video8.mp4"
+    src: "assets/video7.mp4"
   },
 ];
 
